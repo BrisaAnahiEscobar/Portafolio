@@ -1,0 +1,35 @@
+/* ==========================================================================
+   RESET Y BASE
+   ========================================================================== */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Gestión y Trazabilidad de Donaciones",
+    "badge": { "type": "facu", "label": "Proyecto Académico (En curso)" },
+    "description": "Desarrollo grupal Full Stack enfocado en la arquitectura backend para administrar donaciones de manera eficiente y transparente.",
+    "contribution": "Modelado del dominio y entidades, conexión a bases de datos y exposición de servicios a través de endpoints consumibles.",
+    "techs": ["Java", "Spring Boot", "APIs REST", "JPA", "Git"],
+    "links": []
+  },
+  {
+    "title": "Modelado del juego \"El Estanciero\"",
+    "badge": { "type": "facu", "label": "Proyecto Académico" },
+    "description": "Simulación del clásico juego de mesa adaptado al paradigma de objetos, modelando la lógica financiera, propiedades y dinámicas de los jugadores.",
+    "contribution": "Diseño completo de diagramas de clases, definición de atributos, métodos y aplicación rigurosa de polimorfismo y encapsulamiento.",
+    "techs": ["Wollok", "Paradigma de Objetos (POO)", "Lógica de Dominio"],
+    "links": [
+      { "url": "https://github.com/BrisaAnahiEscobar/Juego-Estanciero", "label": "Ver Repositorio" }
+    ]
+  },
+  {
+    "title": "Base de Datos estilo Goodreads",
+    "badge": { "type": "personal", "label": "Proyecto Personal / Técnico" },
+    "description": "Diseño y construcción de una base de datos relacional para una plataforma de reseñas y catalogación de libros, simulando entornos reales de software.",
+    "contribution": "Estructuración del modelo Entidad-Relación, normalización de tablas para evitar redundancias y redacción de queries complejas para reportes.",
+    "techs": ["SQL", "MySQL", "Normalización", "Consultas Complejas"],
+    "links": [
+      { "url": "https://github.com/BrisaAnahiEscobar/BaseDatos-GoodReads", "label": "Ver Repositorio" }
+    ]
+  }
+]

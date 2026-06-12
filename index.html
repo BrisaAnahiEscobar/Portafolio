@@ -3,165 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio | Ingeniería en Sistemas</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Brisa Escobar | Ingeniería en Sistemas</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <button id="theme-toggle" class="btn btn-secondary">🌓 Cambiar Tema</button>
 
-<!-- Perfil -->
+    <!-- Botón flotante de tema -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">☀️</button>
+
+    <!-- ── HEADER / PERFIL ── -->
     <header class="header">
         <div class="container header-content">
             <div class="header-text">
                 <h1>Brisa Anahi Escobar</h1>
                 <p class="subtitle">Estudiante de Ingeniería en Sistemas de Información | Desarrollador Trainee</p>
                 <p class="description">
-                    Apasionado por el desarrollo de software, la arquitectura de sistemas y la resolución de problemas. 
+                    Apasionada por el desarrollo de software, la arquitectura de sistemas y la resolución de problemas.
                     Busco mi primera pasantía para aportar valor y continuar aprendiendo tecnologías Backend y Bases de Datos.
                 </p>
-                
                 <div class="actions">
-                    
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brisaescobar13@gmail.com" target="_blank" class="btn btn-primary">Enviar Email</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brisaescobar13@gmail.com"
+                       target="_blank" rel="noopener" class="btn btn-primary">Enviar Email</a>
                     <button id="btn-copy-mail" class="btn btn-secondary">Copiar Email</button>
-                    <a href="https://github.com/BrisaAnahiEscobar" target="_blank" class="btn btn-outline">GitHub</a>
-                    <a href="https://www.linkedin.com/in/brisa-escobar-/" target="_blank" class="btn btn-outline">LinkedIn</a>
-                    <a href="https://drive.google.com/uc?export=download&id=10FdMh69QTwY0Hn1HBBJ8wD5-0EXH0IR1" class="btn btn-outline" download>Descargar CV (PDF)</a>
-                    
+                    <a href="https://github.com/BrisaAnahiEscobar"
+                       target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+                    <a href="https://www.linkedin.com/in/brisa-escobar-/"
+                       target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+                    <a href="https://drive.google.com/uc?export=download&id=10FdMh69QTwY0Hn1HBBJ8wD5-0EXH0IR1"
+                       class="btn btn-outline" download>Descargar CV (PDF)</a>
                 </div>
                 <span id="copy-alert" class="copy-alert">¡Copiado al portapapeles!</span>
             </div>
         </div>
     </header>
-    
 
-        <!-- Agregado de proyectos -->
-        <main class="container">
-        
+    <main class="container">
+
+        <!-- ── PROYECTOS ── -->
         <section class="section">
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="projects-grid">
-                
-                <article class="card">
-                    <h3>Gestión y Trazabilidad de Donaciones</h3>
-                    <span class="badge badge-facu">Proyecto Académico (en curso)</span>
-                    <p>Desarrollo grupal Full Stack enfocado en la arquitectura backend para administrar donaciones de manera eficiente y transparente .</p>
-                    <p><strong>Aporte:</strong> Modelado del dominio y entidades, conexión a bases de datos y exposición de servicios a través de endpoints consumibles.</p>
-                    <p class="techs">Tags: Java, Spring Boot, APIs REST, JPA, Git </p>
-                    <div class="card-links">
-                    <!--<a href="https://github.com/BrisaAnahiEscobar" target="_blank">Ver Repositorio &rarr;</a> --> 
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3>Modelado del juego "El Estanciero"</h3>
-                    <span class="badge badge-facu">Proyecto Académico </span>
-                    <p>Simulación del clásico juego de mesa adaptado al paradigma de objetos, modelando la lógica financiera, propiedades y dinámicas de los jugadores >
-                    <p><strong>Aporte:</strong> Diseño completo de diagramas de clases, definición de atributos, métodos y aplicación rigurosa de polimorfismo y encapsulamiento .</p>
-                    <p class="techs">Tags: Wollok, Paradigma de Objetos (POO), Lógica de Dominio  </p>
-                    <div class="card-links">
-                        <a href="https://github.com/BrisaAnahiEscobar/Juego-Estanciero" target="_blank">Ver Repositorio &rarr;</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3>Base de Datos estilo Goodreads</h3>
-                    <span class="badge badge-personal">Proyecto Personal / Técnico</span>
-                    <p>Diseño y construcción de una base de datos relacional para una plataforma de reseñas y catalogación de libros, simulando entornos reales de software .</p>
-                    <p><strong>Aporte:</strong> Estructuración del modelo Entidad-Relación, normalización de tablas para evitar redundancias y redacción de queries complejas para reportes .</p>
-                    <p class="techs">Tags: SQL, MySQL, Normalización, Consultas Complejas  </p>
-                    <div class="card-links">
-                        <a href="https://github.com/BrisaAnahiEscobar/BaseDatos-GoodReads" target="_blank">Ver Repositorio &rarr;</a>
-                    </div>
-                </article>
-
+                <!-- Renderizado dinámico desde data/projects.json via js/projects.js -->
             </div>
         </section>
 
+        <!-- ── EDUCACIÓN ── -->
         <section class="section">
             <h2 class="section-title">Formación y Certificaciones</h2>
             <div class="education-list">
                 <div class="edu-item">
                     <h4>Ingeniería en Sistemas de Información</h4>
-                    <p class="edu-meta">Universidad Tecnológica Nacional (UTN - FRBA) | 2023 - Presente (Expectativa: 2028) </p>
+                    <p class="edu-meta">Universidad Tecnológica Nacional (UTN - FRBA) | 2023 - Presente (Expectativa: 2028)</p>
                 </div>
                 <div class="edu-item">
                     <h4>Enterprise Design Thinking (Practitioner / Co-Creator / Team Essentials)</h4>
-                    <p class="edu-meta">IBM | Certificaciones Oficiales enfocadas en metodologías de diseño ágil para Inteligencia Artificial (2025) </p>
+                    <p class="edu-meta">IBM | Certificaciones Oficiales enfocadas en metodologías de diseño ágil para Inteligencia Artificial (2025)</p>
                 </div>
                 <div class="edu-item">
                     <h4>Introducción a Bases Relacionales y Java Principiantes</h4>
-                    <p class="edu-meta">TodoCode Academy | Cursos de especialización técnica finalizados (2026) </p>
+                    <p class="edu-meta">TodoCode Academy | Cursos de especialización técnica finalizados (2026)</p>
                 </div>
             </div>
         </section>
 
-<section class="section">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-container">
-                
-                <div class="skill-category">
-                    <h5>Lenguajes y Datos</h5>
-                    <p>Java, SQL (MySQL), C, C++, Python, Wollok</p>
-                </div>
-
-                <div class="skill-category">
-                    <h5>Frameworks & Backend</h5>
-                    <p>Spring Boot, APIs REST</p>
-                </div>
-
-                <div class="skill-category">
-                    <h5>Herramientas & DevOps</h5>
-                    <p>Git, GitHub, Docker, Postman, n8n (Automatización)</p>
-                </div>
-
-                <div class="skill-category">
-                    <h5>Conceptos e IDEs</h5>
-                    <p>POO, Estructuras de Datos, Metodologías Ágiles (Kanban) | IntelliJ, VS Code</p>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-
-<!--        <section class="section">
-            <h2 class="section-title">Formación Reglada y Cursos</h2>
-            <div class="education-list">
-                <div class="edu-item">
-                    <h4>Ingeniería en Sistemas de Información</h4>
-                    <p class="edu-meta">Universidad Tecnológica Nacional | 2024 - Presente (30% aprobado)</p>
-                </div>
-                <div class="edu-item">
-                    <h4>Curso Completo de Bases de Datos Relacionales y SQL</h4>
-                    <p class="edu-meta">Platzi / Udemy | Finalizado (2025)</p>
-                </div>
-                <div class="edu-item">
-                    <h4>Especialización en Desarrollo Backend con Spring Boot</h4>
-                    <p class="edu-meta">Coursera | <span class="badge-status">En curso</span></p>
-                </div>
-            </div>
-        </section>
-
+        <!-- ── HABILIDADES ── -->
         <section class="section">
             <h2 class="section-title">Habilidades Técnicas</h2>
             <div class="skills-container">
-                <div class="skill-category">
-                    <h5>Lenguajes</h5>
-                    <p>Java, Python, SQL, C#</p>
-                </div>
-                <div class="skill-category">
-                    <h5>Herramientas & Frameworks</h5>
-                    <p>Git, Spring Boot, Flask, Docker, Postman</p>
-                </div>
-                <div class="skill-category">
-                    <h5>Conceptos clave</h5>
-                    <p>Programación Orientada a Objetos (POO), Bases de Datos, Scrum, Diagramas UML</p>
-                </div>
+                <!-- Renderizado dinámico desde data/skills.json via js/skills.js -->
             </div>
         </section>
--->
 
     </main>
 
@@ -169,6 +80,8 @@
         <p>&copy; 2026 - Brisa Escobar</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Módulo JS principal (ES Modules) -->
+    <script type="module" src="js/main.js"></script>
+
 </body>
 </html>

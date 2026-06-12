@@ -1,0 +1,58 @@
+/* ==========================================================================
+   LAYOUT — Contenedores, grillas y estructura de página
+   ========================================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ── Header ── */
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, transparent 100%);
+    padding: 80px 0 50px;
+}
+
+[data-theme="light"] .header {
+    background: linear-gradient(180deg, rgba(125, 73, 228, 0.08) 0%, transparent 100%);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* ── Secciones ── */
+.section {
+    padding: 50px 0;
+}
+
+/* ── Grilla de proyectos ── */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+/* ── Grid de habilidades ── */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* ── Lista de educación ── */
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* ── Footer ── */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid var(--border-color);
+    margin-top: 60px;
+}

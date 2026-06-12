@@ -35,7 +35,26 @@ Para demostrar un dominio sólido de los fundamentos de la web antes de migrar a
 
 El repositorio mantiene una arquitectura de archivos limpia y modular:
 ```text
-├── index.html          # Estructura semántica principal del sitio
-├── style.css           # Estilos globales, variables :root y maquetación responsive
-├── script.js           # Lógica interactiva (eventos, manipulación del DOM y temas)
-└── README.md           # Documentación del proyecto
+📦 portfolio/
+├── index.html
+├── css/
+│   ├── main.css         ← @import de todos los módulos
+│   ├── variables.css    ← tokens de color, temas claro/oscuro
+│   ├── reset.css        ← normalización base
+│   ├── layout.css       ← contenedores, grids, header, footer estructura
+│   ├── sections.css     ← tipografía por sección (header text, edu, skills)
+│   ├── components.css   ← botones, cards, badges, tags, theme-toggle
+│   ├── animations.css   ← todas las transiciones y hovers juntos
+│   └── responsive.css   ← media queries
+├── js/
+│   ├── main.js          ← entry point, inicializa todo
+│   ├── theme.js         ← toggle claro/oscuro + localStorage
+│   ├── projects.js      ← fetch + render dinámico desde JSON
+│   ├── skills.js        ← fetch + render dinámico desde JSON
+│   ├── menu.js          ← preparado para navbar futura
+│   ├── scroll.js        ← IntersectionObserver para animaciones de entrada
+│   └── utils.js         ← $(), $$(), copyToClipboard(), flashClass()
+└── data/
+    ├── projects.json    ← tus proyectos como datos puros
+    └── skills.json      ← tus habilidades como datos puros
+```

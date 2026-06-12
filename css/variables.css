@@ -1,0 +1,38 @@
+/* ==========================================================================
+   VARIABLES DE DISEÑO — Tokens de color, tipografía y estructura
+   ========================================================================== */
+
+:root {
+    /* ── MODO OSCURO (por defecto) ── */
+    --bg-color:        #0b0914;
+    --card-bg:         #131124;
+    --text-color:      #f1edfa;
+    --text-muted:      #9f93c7;
+    --primary-color:   #8f63f5;
+    --btn-text:        #ffffff;
+    --secondary-color: #1e1a3a;
+    --border-color:    #2a244d;
+    --tag-bg:          #221a44;
+    --tag-text:        #c084fc;
+
+    /* ── ESTRUCTURA (compartida por ambos temas) ── */
+    --card-radius:  12px;
+    --card-shadow:  0 4px 20px rgba(0, 0, 0, 0.2);
+    --font-main:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ── MODO CLARO — Escala lila/violeta ── */
+[data-theme="light"] {
+    --bg-color:        #EFE9FC;   
+    --card-bg:         #ffffff;
+    --text-color:      #1a1035;
+    --text-muted:      #5c4d8a;
+    --primary-color:   #7D49E4;  
+    --btn-text:        #ffffff;
+    --secondary-color: #D2C1F6;   
+    --border-color:    #A987ED;   
+    --tag-bg:          #D2C1F6;   
+    --tag-text:        #4a2db5;
+
+    --card-shadow: 0 4px 20px rgba(125, 73, 228, 0.10);
+}

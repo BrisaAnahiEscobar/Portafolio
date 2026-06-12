@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Lenguajes y Datos",
+    "items": ["Java", "SQL (MySQL)", "C", "C++", "Python", "Wollok"]
+  },
+  {
+    "category": "Frameworks & Backend",
+    "items": ["Spring Boot", "APIs REST"]
+  },
+  {
+    "category": "Herramientas & DevOps",
+    "items": ["Git", "GitHub", "Docker", "Postman", "n8n (Automatización)"]
+  },
+  {
+    "category": "Conceptos e IDEs",
+    "items": ["POO", "Estructuras de Datos", "Metodologías Ágiles (Kanban)", "IntelliJ", "VS Code"]
+  }
+]

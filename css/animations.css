@@ -1,0 +1,47 @@
+/* ==========================================================================
+   ANIMACIONES Y TRANSICIONES
+   ========================================================================== */
+
+/* ── Transición global al cambiar tema ── */
+body,
+.card,
+.btn,
+.edu-item,
+.skill-category,
+.section-title,
+.theme-toggle-btn,
+.techs span {
+    transition:
+        background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+        color            0.4s ease,
+        border-color     0.4s ease,
+        box-shadow       0.4s ease,
+        transform        0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* ── Hover — botones ── */
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(167, 139, 250, 0.3);
+}
+
+[data-theme="light"] .btn-primary:hover {
+    box-shadow: 0 8px 20px rgba(125, 73, 228, 0.3);
+}
+
+.btn-secondary:hover,
+.btn-outline:hover {
+    transform: translateY(-2px);
+}
+
+/* ── Hover — cards ── */
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ── Hover — botón de tema ── */
+.theme-toggle-btn:hover {
+    transform: scale(1.1);
+}
