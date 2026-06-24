@@ -36,3 +36,7 @@
 
     --card-shadow: 0 4px 20px rgba(125, 73, 228, 0.10);
 }
+
+[data-theme="light"] .project-details strong { color: #7D49E4 !important; }
+[data-theme="light"] .planned-features-box { background-color: #EFE9FC !important; border-color: #D2C1F6; }
+[data-theme="light"] .planned-features-box h4 { color: #7D49E4; }

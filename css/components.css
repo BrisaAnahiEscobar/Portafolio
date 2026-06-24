@@ -183,3 +183,185 @@
     justify-content: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* ==========================================================================  
+    SECCIÓN IN DEVELOPMENT (PROYECTOS EN CURSO)
+   ========================================================================== */
+
+.section-subtitle {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+/* Modificadores de la Tarjeta de Desarrollo para que resalte */
+.dev-card {
+    border: 1px dashed var(--primary-color) !important; /* Borde discontinuo para denotar que "se está construyendo" */
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto; /* La centra si es una sola */
+}
+
+/* Encabezado con Badges */
+.dev-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.badge-dev {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.badge-status {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Caja de Características Planificadas (Planned Features) */
+.planned-features-box {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    padding: 16px 20px;
+    border-radius: calc(var(--card-radius) - 4px);
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+[data-theme="light"] .planned-features-box,
+html[data-theme="light"] .planned-features-box,
+body[data-theme="light"] .planned-features-box {
+    background-color: #EFE9FC !important; /* Tu --color-50 (Lila ultra suave) */
+    border-color: #D2C1F6;                /* Tu --color-100 */
+}
+
+.planned-features-box h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+[data-theme="light"] .planned-features-box h4,
+html[data-theme="light"] .planned-features-box h4,
+body[data-theme="light"] .planned-features-box h4 {
+    color: #7D49E4; /* Tu --color-400 */
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.features-list li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* El ícono toma el color del lila principal de tu portafolio */
+.features-list li i,
+.features-list li::before {
+    color: var(--primary-color);
+}
+
+/* ==========================================================================  
+ PROYECTOS EN DESARROLLO (MailFlow)
+   ========================================================================== */
+
+/* Contenedor de la descripción*/
+.project-details {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.project-details p {
+    margin-bottom: 12px;
+    color: var(--text-muted);
+}
+
+.project-details strong {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Modificadores estéticos de la tarjeta en desarrollo */
+.dev-card {
+    border: 1px dashed var(--primary-color) !important;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dev-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.badge-dev {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.badge-status {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Caja contenedora del Roadmap (Centrada) */
+.planned-features-box {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: calc(var(--card-radius) - 4px);
+    margin-bottom: 24px;
+    text-align: center; /* Centra el título h4 */
+}
+
+.planned-features-box h4 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Grilla de Funcionalidades (Agrupada en el medio) */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Centra el bloque entero */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    max-width: 750px;       /* Evita que se estiren demasiado hacia los costados */
+    justify-items: center; /* Alinea cada ítem al centro de su columna */
+}
+
+.features-list li {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left; /* Mantiene el texto prolijo al lado de su propio ícono */
+}
