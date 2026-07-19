@@ -45,3 +45,66 @@ body,
 .theme-toggle-btn:hover {
     transform: scale(1.1);
 }
+
+/* ── Navbar ── */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+    padding: 18px 0;
+    position: relative;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text-color);
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+    border-radius: 999px; /* forma de cápsula/píldora */
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+/* Resaltado tipo "píldora" al pasar el cursor */
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    background-color: var(--tag-bg);
+    color: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+/* Clase que marca la sección activa (la agrega scroll.js) */
+.nav-links a.active {
+    background-color: var(--primary-color);
+    color: var(--btn-text);
+}
