@@ -1,18 +1,26 @@
 [
   {
-    "category": "Lenguajes y Datos",
-    "items": ["Java", "SQL (MySQL)", "C", "C++", "Python", "Wollok"]
+    "category": "Backend",
+    "items": ["Java", "Spring Boot", "APIs REST", "Python"]
   },
   {
-    "category": "Frameworks & Backend",
-    "items": ["Spring Boot", "APIs REST"]
+    "category": "Base de datos",
+    "items": ["MySQL", "SQL"]
   },
   {
-    "category": "Herramientas & DevOps",
-    "items": ["Git", "GitHub", "Docker", "Postman", "n8n (Automatización)"]
+    "category": "Frontend",
+    "items": ["HTML", "CSS", "JavaScript"]
+  },
+   {
+    "category": "DevOps",
+    "items": ["Git", "GitHub", "Docker"]
   },
   {
-    "category": "Conceptos e IDEs",
-    "items": ["POO", "Estructuras de Datos", "Metodologías Ágiles (Kanban)", "IntelliJ", "VS Code"]
+    "category": "Testing y automatización",
+    "items": ["Postman", "n8n"]
+  }, 
+  {
+    "category": "Diseño",
+    "items": ["UML", "DDD", "Arquitectura por capas"]
   }
 ]
