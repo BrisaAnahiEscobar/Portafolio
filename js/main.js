@@ -3,7 +3,7 @@
 import { initTheme }         from './theme.js';
 import { initProjects }      from './projects.js';
 import { initSkills }        from './skills.js';
-import { initMenu }          from './menu.js';
+import { initMenu, initNavOffset } from './menu.js';
 import { initScrollEffects } from './scroll.js';
 import { $, copyToClipboard, flashClass } from './utils.js';
 
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Menú de navegación
     initMenu();
+    initNavOffset();
 
     // Scroll effects
     initScrollEffects();
