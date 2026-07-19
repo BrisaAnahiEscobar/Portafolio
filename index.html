@@ -7,19 +7,35 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
     <!-- Botón flotante de tema -->
-    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">☀️</button>
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema"> ☀️ </button>
+
+    <nav class="navbar">
+    <div class="container nav-container">
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
+            <li><a href="#certificaciones">Certificaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+    </div>
+</nav>
 
     <!-- ── HEADER / PERFIL ── -->
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="container header-content">
             <div class="header-text">
                 <h1>Brisa Anahi Escobar</h1>
                 <p class="subtitle">Estudiante de Ingeniería en Sistemas de Información | Desarrollador Trainee</p>
                 <p class="description">
                     Apasionada por el desarrollo de software, la arquitectura de sistemas y la resolución de problemas.
-                    Busco mi primera pasantía para aportar valor y continuar aprendiendo tecnologías Backend y Bases de Datos.
+                    Busco mi primera pasantía para aportar valor y continuar aprendiendo tecnologías Backend y Bases de Datos. <br>
+                    Java • JavaScript • Spring Boot • SQL • Python • Docker. 
+
                 </p>
                 <div class="actions">
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brisaescobar13@gmail.com"
@@ -29,7 +45,7 @@
                        target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
                     <a href="https://www.linkedin.com/in/brisa-escobar-/"
                        target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
-                    <a href="https://drive.google.com/uc?export=download&id=10FdMh69QTwY0Hn1HBBJ8wD5-0EXH0IR1"
+                    <a href="https://drive.google.com/uc?export=download&id=1QMda8UHq522RLL-2SfWg8yVpPKjAoHAY"
                        class="btn btn-outline" download>Descargar CV (PDF)</a>
                 </div>
                 <span id="copy-alert" class="copy-alert">¡Copiado al portapapeles!</span>
@@ -39,70 +55,36 @@
 
     <main class="container">
 
-        <section class="section" id="en-desarrollo">
-        <div class="container">
-        <h2 class="section-title">En desarrollo</h2>
-    
-        <div class="development-grid">
-            <div class="card dev-card">
-                <div class="dev-header">
-                    <span class="badge badge-dev">En progreso </span>
-                    <span class="badge badge-status">🚧 Estado: Planificación / Configuración inicial</span>
-                </div>
-                
-                <h3>MailFlow - Asistente de voz inteligente para correo electrónico</h3>
-                
-                <div class="techs">
-                    <span>Flutter</span>
-                    <span>Java</span>
-                    <span>Spring Boot</span>
-                    <span>Gmail API</span>
-                    <span>OAuth2</span>
-                    <span>PostgreSQL</span>
-                    <span>Docker</span>
-                    <span>Text-to-Speech</span>
-                </div>
-
-                <div class="project-details">
-                    <p><strong>💡Descripción:</strong>
-                        Aplicación multiplataforma diseñada para convertir los emails entrantes en audio,
-                         mejorando así la accesibilidad y la productividad. La app integra la API de Gmail, 
-                         la conversión de texto a voz y, en el futuro, la función de resumen con IA para que los usuarios puedan leer 
-                         sus correos electrónicos sin usar las manos. Desarrollada con Flutter para dispositivos móviles y de escritorio,
-                          y con Spring Boot para los servicios de backend.</p>
-                </div>
-
-                <div class="planned-features-box">
-                    <h4>🎯 Funcionalidades planificadas y hoja de ruta:</h4>
-                    <ul class="features-list">
-                        <li><i class="fas fa-square-poll-horizontal"></i> Leer emails en voz alta </li>
-                        <li><i class="fas fa-layer-group"></i> Priorización inteligente</li>
-                        <li><i class="fas fa-brain"></i> Resúmenes de IA</li>
-                        <li><i class="fas fa-microphone"></i> Respuestas de voz</li>
-                        <li><i class="fas fa-tags"></i> Categorización de emails</li>
-                    </ul>
-                </div>
-
-                <div class="card-links">
-                    <a href="https://github.com/BrisaAnahiEscobar/mailflow" target="_blank">
-                        <i class="fab fa-github"></i> Segui el progreso en GitHub →
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <!-- ── SOBRE MÍ ── -->
+        <section class="section" id="sobre-mi">
+            <h2 class="section-title">Sobre mí</h2>
+            <p class="about-text">
+                Soy estudiante de Ingeniería en Sistemas de Información en la UTN. Me interesa el desarrollo
+                backend, el diseño de APIs, la automatización de procesos y la construcción de aplicaciones
+                escalables. Disfruto aprender nuevas tecnologías y participar en proyectos colaborativos.
+            </p>
+        </section>
 
         <!-- ── PROYECTOS ── -->
-        <section class="section">
+        <section class="section" id="proyectos">
             <h2 class="section-title">Proyectos Destacados</h2>
+
             <div class="projects-grid">
                 <!-- Renderizado dinámico desde data/projects.json via js/projects.js -->
             </div>
         </section>
 
+        <!-- ── HABILIDADES ── -->
+        <section class="section" id="tecnologias"> 
+            
+            <h2 class="section-title">Habilidades Técnicas - Tecnologías</h2>
+            <div class="skills-container">
+                <!-- Renderizado dinámico desde data/skills.json via js/skills.js -->
+            </div>
+        </section>
+
         <!-- ── EDUCACIÓN ── -->
-        <section class="section">
+        <section class="section" id="certificaciones">
             <h2 class="section-title">Formación y Certificaciones</h2>
             <div class="education-list">
                 <div class="edu-item">
@@ -117,22 +99,29 @@
                     <h4>Introducción a Bases Relacionales y Java Principiantes</h4>
                     <p class="edu-meta">TodoCode Academy | Cursos de especialización técnica finalizados (2026)</p>
                 </div>
-            </div>
-        </section>
+                    <div class="edu-item">
+                    <h4>Programacion asistida con IA</h4>
+                    <p class="edu-meta">Chicas en tecnologia (CET) | HTML, CSS, JS (2026) </p>
+                </div>
 
-        <!-- ── HABILIDADES ── -->
-        <section class="section">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-container">
-                <!-- Renderizado dinámico desde data/skills.json via js/skills.js -->
             </div>
         </section>
 
     </main>
 
-    <footer class="footer">
-        <p>&copy; 2026 - Brisa Escobar</p>
-    </footer>
+<footer class="footer" id="contacto">
+    <div class="container footer-content">
+        <p class="footer-text">¿Buscás sumar a alguien con ganas de aprender y aportar? Escribime.</p>
+        <nav class="footer-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=brisaescobar13@gmail.com" target="_blank" rel="noopener">Email</a>
+            <a href="https://github.com/BrisaAnahiEscobar" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/brisa-escobar-/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://drive.google.com/uc?export=download&id=10FdMh69QTwY0Hn1HBBJ8wD5-0EXH0IR1" download>Descargar CV</a>
+        </nav>
+
+        <p class="footer-copy">&copy; 2026 - Brisa Escobar</p>
+    </div>
+</footer>
 
     <!-- Módulo JS principal (ES Modules) -->
     <script type="module" src="js/main.js"></script>
