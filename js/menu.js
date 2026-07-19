@@ -16,3 +16,18 @@ export function initMenu() {
         hamburger.setAttribute('aria-expanded', isOpen);
     });
 }
+
+
+export function initNavOffset() {
+    const navbar = $('.navbar');
+    if (!navbar) return;
+
+    const updateOffset = () => {
+        const extraAire = 16; // margen extra para que el título respire
+        const height = navbar.getBoundingClientRect().height + extraAire;
+        document.documentElement.style.setProperty('--nav-height', `${height}px`);
+    };
+
+    updateOffset();
+    window.addEventListener('resize', updateOffset);
+}
