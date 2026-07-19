@@ -6,7 +6,7 @@ const STORAGE_KEY = 'theme';
 const DEFAULT_THEME = 'dark';
 
 const ICONS = {
-    light: '🌙',
+    light: '🌙' ,
     dark: '☀️',
 };
 
