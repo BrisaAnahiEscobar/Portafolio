@@ -1,5 +1,15 @@
 [
   {
+    "title": "MailFlow - Asistente de voz inteligente para correo electrónico",
+    "badge": { "type": "dev", "label": "En Desarrollo" },
+    "description": "Aplicación multiplataforma que convierte los emails entrantes en audio, mejorando la accesibilidad y la productividad al integrar la API de Gmail con conversión de texto a voz.",
+    "contribution": "Desarrollo full stack: app en Flutter para móvil y escritorio, backend en Spring Boot, autenticación OAuth2 y diseño de la arquitectura de datos en PostgreSQL.",
+    "techs": ["Flutter", "Java", "Spring Boot", "Gmail API", "OAuth2", "PostgreSQL", "Docker"],
+    "links": [
+      { "url": "https://github.com/BrisaAnahiEscobar/mailflow", "label": "Seguir progreso en GitHub" }
+    ]
+  },
+  {
     "title": "Gestión y Trazabilidad de Donaciones",
     "badge": { "type": "facu", "label": "Proyecto Académico (En curso)" },
     "description": "Desarrollo grupal Full Stack enfocado en la arquitectura backend para administrar donaciones de manera eficiente y transparente.",
@@ -26,5 +36,16 @@
     "links": [
       { "url": "https://github.com/BrisaAnahiEscobar/BaseDatos-GoodReads", "label": "Ver Repositorio" }
     ]
+  }, 
+  {
+    "title": "Luz, cámara, accion", 
+    "badge": {"type": "curso", "label": "Proyecto grupal"},
+    "description": "Desarrollo de un sitio web responsive utilizando HTML, CSS y JavaScript",
+    "contribution" : "Sitio web que refleje un problema con impacto social, relacionado con los objetivos ODS, Luz camara accion tiene el estilo como linkedin con la mision que sea una web por y para artistas",
+     "techs": ["HTML", "CSS", "JavaScript"], 
+     "links": [
+      {"url": "https://github.com/BrisaAnahiEscobar/proyecto-CET", "label": "Ver Repositorio"}
+     ]
+
   }
 ]
