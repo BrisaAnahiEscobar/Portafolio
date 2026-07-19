@@ -11,9 +11,8 @@
 /* ── Header ── */
 .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, transparent 100%);
-    padding: 80px 0 50px;
+    padding: 40px 0 50px;
 }
-
 [data-theme="light"] .header {
     background: linear-gradient(180deg, rgba(125, 73, 228, 0.08) 0%, transparent 100%);
 }
