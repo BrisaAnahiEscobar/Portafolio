@@ -1,6 +1,10 @@
 /* ==========================================================================
    RESET Y BASE
    ========================================================================== */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height, 90px); /* se actualiza por JS con el alto real de la navbar */
+}
 
 *, *::before, *::after {
     margin: 0;
