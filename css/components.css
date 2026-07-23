@@ -1,6 +1,15 @@
 /* ==========================================================================
    COMPONENTES — Botones, cards, badges, tags, controles
    ========================================================================== */
+.header-photo img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    box-shadow: var(--card-shadow);
+    flex-shrink: 0;
+}
 
 /* ── Botones ── */
 .actions {
@@ -227,8 +236,9 @@
 }
 
 .badge-dev {
-    background-color: var(--primary-color) !important;
-    color: #ffffff !important;
+    background-color: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
 .badge-status {
@@ -251,8 +261,8 @@
 [data-theme="light"] .planned-features-box,
 html[data-theme="light"] .planned-features-box,
 body[data-theme="light"] .planned-features-box {
-    background-color: #EFE9FC !important; /* Tu --color-50 (Lila ultra suave) */
-    border-color: #D2C1F6;                /* Tu --color-100 */
+    background-color: #EFE9FC !important; 
+    border-color: #D2C1F6;                
 }
 
 .planned-features-box h4 {
@@ -263,10 +273,10 @@ body[data-theme="light"] .planned-features-box {
     color: var(--text-color);
 }
 
-[data-theme="light"] .planned-features-box h4,
-html[data-theme="light"] .planned-features-box h4,
-body[data-theme="light"] .planned-features-box h4 {
-    color: #7D49E4; /* Tu --color-400 */
+[data-theme="light"] .badge-dev {
+    background-color: rgba(34, 197, 94, 0.12);
+    color: #15803d;
+    border: 1px solid rgba(34, 197, 94, 0.3);
 }
 
 .features-list {
