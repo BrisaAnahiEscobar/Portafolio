@@ -1,7 +1,7 @@
 [
   {
     "title": "MailFlow - Asistente de voz inteligente para correo electrónico",
-    "badge": { "type": "dev", "label": "En Desarrollo" },
+    "badge": { "type": "dev", "label": "Personal - En desarrollo" },
     "description": "Aplicación multiplataforma que convierte los emails entrantes en audio, mejorando la accesibilidad y la productividad al integrar la API de Gmail con conversión de texto a voz.",
     "contribution": "Desarrollo full stack: app en Flutter para móvil y escritorio, backend en Spring Boot, autenticación OAuth2 y diseño de la arquitectura de datos en PostgreSQL.",
     "techs": ["Flutter", "Java", "Spring Boot", "Gmail API", "OAuth2", "PostgreSQL", "Docker"],
