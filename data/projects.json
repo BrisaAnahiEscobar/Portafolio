@@ -1,24 +1,24 @@
 [
   {
-    "title": "MailFlow - Asistente de voz inteligente para correo electrónico",
-    "badge": { "type": "dev", "label": "Personal - En desarrollo" },
+    "title": "MailFlow - Asistente de voz inteligente para correo electrónico (2026)",
+    "badge": { "type": "personal", "label": "Proyecto Personal / Técnico - En desarrollo" },
     "description": "Aplicación multiplataforma que convierte los emails entrantes en audio, mejorando la accesibilidad y la productividad al integrar la API de Gmail con conversión de texto a voz.",
     "contribution": "Desarrollo full stack: app en Flutter para móvil y escritorio, backend en Spring Boot, autenticación OAuth2 y diseño de la arquitectura de datos en PostgreSQL.",
     "techs": ["Flutter", "Java", "Spring Boot", "Gmail API", "OAuth2", "PostgreSQL", "Docker"],
     "links": [
-      { "url": "https://github.com/BrisaAnahiEscobar/mailflow", "label": "Seguir progreso en GitHub" }
+      { "url": "https://github.com/BrisaAnahiEscobar/mailflow", "label": "Segui el progreso en GitHub" }
     ]
   },
   {
-    "title": "Gestión y Trazabilidad de Donaciones",
+    "title": "Gestión y Trazabilidad de Donaciones (2026)",
     "badge": { "type": "facu", "label": "Proyecto Académico (En curso)" },
     "description": "Desarrollo grupal Full Stack enfocado en la arquitectura backend para administrar donaciones de manera eficiente y transparente.",
     "contribution": "Modelado del dominio y entidades, conexión a bases de datos y exposición de servicios a través de endpoints consumibles.",
     "techs": ["Java", "Spring Boot", "APIs REST", "JPA", "Git"],
-    "links": []
+    "links": [{"url": "https://github.com/BrisaAnahiEscobar", "label":"Repositorio privado"}]
   },
   {
-    "title": "Modelado del juego \"El Estanciero\"",
+    "title": "Modelado del juego \"El Estanciero\" (2025)",
     "badge": { "type": "facu", "label": "Proyecto Académico" },
     "description": "Simulación del clásico juego de mesa adaptado al paradigma de objetos, modelando la lógica financiera, propiedades y dinámicas de los jugadores.",
     "contribution": "Diseño completo de diagramas de clases, definición de atributos, métodos y aplicación rigurosa de polimorfismo y encapsulamiento.",
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "title": "Base de Datos estilo Goodreads",
+    "title": "Base de Datos estilo Goodreads (2026)",
     "badge": { "type": "personal", "label": "Proyecto Personal / Técnico" },
     "description": "Diseño y construcción de una base de datos relacional para una plataforma de reseñas y catalogación de libros, simulando entornos reales de software.",
     "contribution": "Estructuración del modelo Entidad-Relación, normalización de tablas para evitar redundancias y redacción de queries complejas para reportes.",
@@ -38,8 +38,8 @@
     ]
   }, 
   {
-    "title": "Luz, cámara, accion", 
-    "badge": {"type": "curso", "label": "Proyecto grupal"},
+    "title": "Luz, cámara, acción (2026)", 
+    "badge": {"type": "curso", "label": "Proyecto grupal - Curso CET"},
     "description": "Desarrollo de un sitio web responsive utilizando HTML, CSS y JavaScript",
     "contribution" : "Sitio web que refleje un problema con impacto social, relacionado con los objetivos ODS, Luz camara accion tiene el estilo como linkedin con la mision que sea una web por y para artistas",
      "techs": ["HTML", "CSS", "JavaScript"], 
