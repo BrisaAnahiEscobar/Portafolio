@@ -150,9 +150,9 @@
 }
 
 .badge-facu {
-    background-color: rgba(167, 139, 250, 0.15);
-    color: #c084fc;
-    border: 1px solid rgba(167, 139, 250, 0.3);
+    background-color: rgba(229, 230, 179, 0.267);
+    color: #e2e067;
+    border: 1px solid rgba(247, 248, 153, 0.3);
 }
 
 .badge-personal {
@@ -170,10 +170,16 @@
 /*--- En tema claro ---*/
 
 [data-theme="light"] .badge-facu {
-    background-color: rgba(169, 135, 237, 0.2);
-    color: #5b21b6;
-    border: 1px solid rgba(169, 135, 237, 0.4);
+    background-color: rgba(247, 241, 169, 0.822);
+    color: #706b22;
+    border: 1px solid rgba(201, 209, 128, 0.4);
 }
+
+/*[data-theme="light"] .badge-facu {
+    background-color: rgba(184, 192, 196, 0.897);
+    color: #0c09b6;
+    border: 1px solid rgba(70, 87, 187, 0.4);
+}*/
 
 [data-theme="light"] .badge-personal {
     background-color: rgba(14, 165, 233, 0.12);
@@ -296,7 +302,6 @@ body[data-theme="light"] .planned-features-box {
     gap: 8px;
 }
 
-/* El ícono toma el color del lila principal de tu portafolio */
 .features-list li i,
 .features-list li::before {
     color: var(--primary-color);
