@@ -5,6 +5,7 @@ import { initProjects }      from './projects.js';
 import { initSkills }        from './skills.js';
 import { initMenu, initNavOffset } from './menu.js';
 import { initScrollEffects } from './scroll.js';
+import { initEmailLinks, CONTACT } from './contact.js';
 import { $, copyToClipboard, flashClass } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,13 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     initProjects();
     initSkills();
 
+    // Botones de enviar email 
+    initEmailLinks();
+
     // Copiar email al portapapeles
     const btnCopy = $('#btn-copy-mail');
     const alert   = $('#copy-alert');
 
     if (btnCopy && alert) {
         btnCopy.addEventListener('click', async () => {
-            const ok = await copyToClipboard('brisaescobar13@gmail.com');
+            const ok = await copyToClipboard(CONTACT.email);
             if (ok) flashClass(alert, 'show');
         });
     }

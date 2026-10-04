@@ -23,13 +23,19 @@ export function mailtoUrl({ email, subject }) {
 
 export function initEmailLinks() {
     $$('[data-email-link]').forEach(link => {
+        
         link.setAttribute('href', mailtoUrl(CONTACT));
 
         link.addEventListener('click', (event) => {
             if (!isDesktopLike()) return; 
 
-            const win = window.open(gmailComposeUrl(CONTACT), '_blank', 'noopener');
-            if (win) event.preventDefault();
+            const win = window.open(gmailComposeUrl(CONTACT), '_blank');
+
+            if (win) {
+                win.opener = null;      
+                event.preventDefault();
+            }
+            
         });
     });
 }
